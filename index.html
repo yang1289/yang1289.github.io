@@ -67,6 +67,8 @@
 	        
 				<li><a href="/categories/Linux笔记">Linux笔记</a></li>
 	        
+				<li><a href="/categories/docker笔记">Docker笔记</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -127,6 +129,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -145,13 +149,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/vue-js学习">vue,js学习</a></li>
+					<li style="width: 20%"><a href="/categories/vue-js学习">vue,js学习</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/drools学习">drools学习</a></li>
+					<li style="width: 20%"><a href="/categories/drools学习">drools学习</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/Linux笔记">Linux笔记</a></li>
+					<li style="width: 20%"><a href="/categories/Linux笔记">Linux笔记</a></li>
+		        
+					<li style="width: 20%"><a href="/categories/docker笔记">Docker笔记</a></li>
 		        
 				</ul>
 			</nav>
@@ -167,6 +173,117 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-docker笔记/docker容器安装MySQL" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/01/docker笔记/docker容器安装MySQL/">docker容器安装MySQL</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/01/docker笔记/docker容器安装MySQL/" class="archive-article-date">
+  	<time datetime="2019-07-01T03:24:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><h3 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h3><p>在docker中安装MySQL之前，首先我们需要安装docker，docker for windows安装比较简单，只需要你的电脑将hyper-v打开就行。</p>
+<blockquote>
+<p>如果需要从官方拉取镜像，这里需要首先登陆docker 账户。通过命令<code>docker login</code>登陆。这里需要注意的是登陆docker账号的时候，输入的docker ID并不是你的邮箱账号。而是docker的账号名。</p>
+</blockquote>
+<h3 id="MySQL安装前提"><a href="#MySQL安装前提" class="headerlink" title="MySQL安装前提"></a>MySQL安装前提</h3><p>安装MySQL之前，我们首先需要看一下MySQL的有哪些版本的镜像，可以通过访问地址<a href="https://hub.docker.com/_/mysql" target="_blank" rel="noopener">docker中MySQL镜像主页</a>。其中tags对应的就是版本号。选择我们想要安装的版本。输入命令将MySQL拉取到本地。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7(tags)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>tags中就是版本号。这些都可以在docker中查询到。<a href="https://hub.docker.com/_/mysql?tab=tags" target="_blank" rel="noopener">MySQL Tags</a></p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="简单安装"><a href="#简单安装" class="headerlink" title="简单安装"></a>简单安装</h3><p>根据镜像说明可知：</p>
+<ul>
+<li>默认的配置文件是：/etc/my.cnf</li>
+<li>默认的数据目录是：/var/lib/mysql</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name mysql --rm -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7.22(Tags)</span><br></pre></td></tr></table></figure>
+<p>通过 bash 进入容器，查看 my.cnf：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it mysql bash</span><br><span class="line"></span><br><span class="line">cat /etc/mysql/my.cnf</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/07/01/docker笔记/docker容器安装MySQL/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">docker笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/docker笔记//" class="article-tag-list-link color4">docker笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/01/docker笔记/docker容器安装MySQL/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1186,6 +1303,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Linux笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">docker笔记</a>
               </li>
              
               <li class="article-tag-list-item">

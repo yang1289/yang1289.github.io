@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yang1289.github.io">
-  <title>自定义按键修饰符 | sykki</title>
+  <title>docker容器安装MySQL | sykki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue中自定义按键修饰符在vue中，默认提供了enter的按键修饰符，我们可以通过vue来设置按键事件。 按键事件说明官方都有，地址为vue按键修饰符 这里主要记录一下怎么自定义按键修饰符： 有些按键修饰符默认没有被定义，例如F2，这些按键就没有被定义出来，所以我们需要将它定义出来，定义的方式就是通过Vue.config.keyCodes.别名 = 按键的值进行控制。例如： 1Vue.config">
-<meta name="keywords" content="vue.js,前端框架">
+  <meta name="description" content="安装前提docker安装在docker中安装MySQL之前，首先我们需要安装docker，docker for windows安装比较简单，只需要你的电脑将hyper-v打开就行。  如果需要从官方拉取镜像，这里需要首先登陆docker 账户。通过命令docker login登陆。这里需要注意的是登陆docker账号的时候，输入的docker ID并不是你的邮箱账号。而是docker的账号名。">
+<meta name="keywords" content="linux,docker,docker笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自定义按键修饰符">
-<meta property="og:url" content="http://yang1289.github.io/2019/05/18/vue.js学习/自定义按键修饰符/index.html">
+<meta property="og:title" content="docker容器安装MySQL">
+<meta property="og:url" content="http://yang1289.github.io/2019/07/01/docker笔记/docker容器安装MySQL/index.html">
 <meta property="og:site_name" content="sykki">
-<meta property="og:description" content="vue中自定义按键修饰符在vue中，默认提供了enter的按键修饰符，我们可以通过vue来设置按键事件。 按键事件说明官方都有，地址为vue按键修饰符 这里主要记录一下怎么自定义按键修饰符： 有些按键修饰符默认没有被定义，例如F2，这些按键就没有被定义出来，所以我们需要将它定义出来，定义的方式就是通过Vue.config.keyCodes.别名 = 按键的值进行控制。例如： 1Vue.config">
+<meta property="og:description" content="安装前提docker安装在docker中安装MySQL之前，首先我们需要安装docker，docker for windows安装比较简单，只需要你的电脑将hyper-v打开就行。  如果需要从官方拉取镜像，这里需要首先登陆docker 账户。通过命令docker login登陆。这里需要注意的是登陆docker账号的时候，输入的docker ID并不是你的邮箱账号。而是docker的账号名。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-30T15:23:02.533Z">
+<meta property="og:image" content="http://fwhyy.com/img/post/15267432343896.jpg">
+<meta property="og:updated_time" content="2019-07-01T05:15:07.883Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自定义按键修饰符">
-<meta name="twitter:description" content="vue中自定义按键修饰符在vue中，默认提供了enter的按键修饰符，我们可以通过vue来设置按键事件。 按键事件说明官方都有，地址为vue按键修饰符 这里主要记录一下怎么自定义按键修饰符： 有些按键修饰符默认没有被定义，例如F2，这些按键就没有被定义出来，所以我们需要将它定义出来，定义的方式就是通过Vue.config.keyCodes.别名 = 按键的值进行控制。例如： 1Vue.config">
+<meta name="twitter:title" content="docker容器安装MySQL">
+<meta name="twitter:description" content="安装前提docker安装在docker中安装MySQL之前，首先我们需要安装docker，docker for windows安装比较简单，只需要你的电脑将hyper-v打开就行。  如果需要从官方拉取镜像，这里需要首先登陆docker 账户。通过命令docker login登陆。这里需要注意的是登陆docker账号的时候，输入的docker ID并不是你的邮箱账号。而是docker的账号名。">
+<meta name="twitter:image" content="http://fwhyy.com/img/post/15267432343896.jpg">
   
     <link rel="alternative" href="/atom.xml" title="sykki" type="application/atom+xml">
   
@@ -173,34 +175,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue.js学习/自定义按键修饰符" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-docker笔记/docker容器安装MySQL" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      自定义按键修饰符
+      docker容器安装MySQL
     </h1>
   
 
         
-        <a href="/2019/05/18/vue.js学习/自定义按键修饰符/" class="archive-article-date">
-  	<time datetime="2019-05-18T06:42:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-18</time>
+        <a href="/2019/07/01/docker笔记/docker容器安装MySQL/" class="archive-article-date">
+  	<time datetime="2019-07-01T03:24:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="vue中自定义按键修饰符"><a href="#vue中自定义按键修饰符" class="headerlink" title="vue中自定义按键修饰符"></a>vue中自定义按键修饰符</h1><p>在vue中，默认提供了<code>enter</code>的按键修饰符，我们可以通过vue来设置按键事件。</p>
-<p>按键事件说明官方都有，地址为<a href="https://cn.vuejs.org/v2/guide/events.html#%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6" target="_blank" rel="noopener">vue按键修饰符</a></p>
-<p>这里主要记录一下怎么自定义按键修饰符：</p>
-<p>有些按键修饰符默认没有被定义，例如<code>F2</code>，这些按键就没有被定义出来，所以我们需要将它定义出来，定义的方式就是通过<code>Vue.config.keyCodes.别名 = 按键的值</code>进行控制。<br>例如：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.config.keyCodes.f2 = <span class="number">113</span></span><br></pre></td></tr></table></figure>
+        <h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><h3 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h3><p>在docker中安装MySQL之前，首先我们需要安装docker，docker for windows安装比较简单，只需要你的电脑将hyper-v打开就行。</p>
 <blockquote>
-<p>当然直接在按键事件中 直接给按键值也是可以。</p>
+<p>如果需要从官方拉取镜像，这里需要首先登陆docker 账户。通过命令<code>docker login</code>登陆。这里需要注意的是登陆docker账号的时候，输入的docker ID并不是你的邮箱账号。而是docker的账号名。</p>
 </blockquote>
+<h3 id="MySQL安装前提"><a href="#MySQL安装前提" class="headerlink" title="MySQL安装前提"></a>MySQL安装前提</h3><p>安装MySQL之前，我们首先需要看一下MySQL的有哪些版本的镜像，可以通过访问地址<a href="https://hub.docker.com/_/mysql" target="_blank" rel="noopener">docker中MySQL镜像主页</a>。其中tags对应的就是版本号。选择我们想要安装的版本。输入命令将MySQL拉取到本地。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7(tags)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>tags中就是版本号。这些都可以在docker中查询到。<a href="https://hub.docker.com/_/mysql?tab=tags" target="_blank" rel="noopener">MySQL Tags</a></p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="简单安装"><a href="#简单安装" class="headerlink" title="简单安装"></a>简单安装</h3><p>根据镜像说明可知：</p>
+<ul>
+<li>默认的配置文件是：/etc/my.cnf</li>
+<li>默认的数据目录是：/var/lib/mysql</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name mysql --rm -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7.22(Tags)</span><br></pre></td></tr></table></figure>
+<p>通过 bash 进入容器，查看 my.cnf：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it mysql bash</span><br><span class="line"></span><br><span class="line">cat /etc/mysql/my.cnf</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="外挂数据安装"><a href="#外挂数据安装" class="headerlink" title="外挂数据安装"></a>外挂数据安装</h3><ol>
+<li>创建一个<code>my.cnf</code></li>
+</ol>
+<p>填写内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">user=mysql</span><br><span class="line">character-set-server=utf8</span><br><span class="line">default_authentication_plugin=mysql_native_password</span><br><span class="line"></span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>创建启动命令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 --restart always --privileged=<span class="literal">true</span> --name mysql_5.7.26 -e MYSQL_USER=<span class="string">"sykki"</span> -e MYSQL_PASSWORD=<span class="string">"sykki"</span> -e MYSQL_ROOT_PASSWORD=<span class="string">"yq199410."</span> -v=/d/MySQL_5.7.26/my.cnf:/etc/my.cnf -v=/d/MySQL_5.7.26/data:/var/lib/mysql mysql:5.7.26</span><br></pre></td></tr></table></figure>
+<p>参数说明：</p>
+<blockquote>
+<p>–restart always：开机启动<br>–privileged=true：提升容器内权限<br>-v=/mysqltest/config/my.cnf:/etc/my.cnf：映射配置文件<br>-v=/mysqltest/data:/var/lib/mysql：映射数据目录</p>
+</blockquote>
+<p><strong><em>特别说明</em></strong></p>
+<p>如果没有添加<code>--privileged=true</code>参数，容器创建后不能正常启动，查看日志发现有权限的错误</p>
+<p><img src="http://fwhyy.com/img/post/15267432343896.jpg" alt></p>
 
       
 
@@ -240,11 +268,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vue.js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端框架</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">docker笔记</a>
         		</li>
       		
 		</ul>
@@ -256,7 +288,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/vue-js学习//" class="article-tag-list-link color4">vue.js学习</a>
+        			<a href="/categories/docker笔记//" class="article-tag-list-link color4">docker笔记</a>
         		</li>
       		
 		</ul>
@@ -311,7 +343,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yang1289.github.io/2019/05/18/vue.js学习/自定义按键修饰符/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yang1289.github.io/2019/07/01/docker笔记/docker容器安装MySQL/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -325,18 +357,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/18/vue.js学习/vue-过滤器/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue 过滤器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/13/项目目录/项目结构文档/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">项目结构文档</div>
+    <a href="/2019/06/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
